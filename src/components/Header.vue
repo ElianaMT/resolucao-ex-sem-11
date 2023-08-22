@@ -1,6 +1,6 @@
 <template>          
     <header>
-        <router-link to="/">
+        <router-link to="/novo-medicamento">
            FARMACIA Z
         </router-link>
     </header>
