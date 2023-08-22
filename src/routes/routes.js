@@ -1,7 +1,6 @@
 import { createRouter,createWebHashHistory } from "vue-router";
-
-import Home from "@/pages/Home.vue"
-import FormMedicamentos from "@/pages/FormMedicamentos.vue"
+import Home from "../pages/Home.vue"
+import FormMedicamento from "../pages/FormMedicamentos.vue"
 
 export const routes= createRouter({ 
     history: createWebHashHistory (),
@@ -15,10 +14,9 @@ export const routes= createRouter({
          {
             path:"/novo-medicamento",
             name: "novo-medicamento",
-            component: () => import ("@/pages/FormMedicamentos.vue")
+            component: FormMedicamento
          } 
 
         ]
 })
 
-export default routes

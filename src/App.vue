@@ -1,7 +1,7 @@
 <template>
   <Header />
   
-  <FormularioNovoMedicamento @cadastrar ="AdicionaMedicamento" />
+  
   <div class="container1">
 
     <CardMedicamento v-if="!!listaMedicamentos" 
@@ -19,16 +19,13 @@
 </template>
   
 <script >
-import { v4 as uuidv4 } from 'uuid';
 import Header from "./components/Header.vue"
-import FormularioNovoMedicamento from "./components/FormularioNovoMedicamento/index.vue"
 import CardMedicamento from "./components/CardMedicamento/index.vue"
 
 export default {
   components: {
     Header,
-    FormularioNovoMedicamento,
-    CardMedicamento
+        CardMedicamento
   },
 
   data() {
@@ -37,24 +34,8 @@ export default {
     }
   },
 
-  methods: {
-    AdicionaMedicamento(nome, laboratorio, preco) {
-      if (nome === "" || laboratorio === "" || preco === 0) {
-        alert("Preencha todos os dados")
-        return
-      }
+  methods: {  
 
-      const novoMedicamento = {
-        id: uuidv4(),
-        nome: nome,
-        laboratorio: laboratorio,
-        preco: preco,
-        favorito: false
-      }
-
-      this.listaMedicamentos.push(novoMedicamento)
-
-    },
     FavoritarMedicamento(id) {
 
       this.listaMedicamentos = this.listaMedicamentos.map(item => {
