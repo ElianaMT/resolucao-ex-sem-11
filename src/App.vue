@@ -1,5 +1,6 @@
 <template>
   <Header />
+  
   <FormularioNovoMedicamento @cadastrar ="AdicionaMedicamento" />
   <div class="container1">
 
@@ -13,6 +14,8 @@
       :id="medicamento.id" />
 
   </div>
+
+  <router-view></router-view>
 </template>
   
 <script >
@@ -59,6 +62,7 @@ export default {
         if (item.id === id) {
           item.favorito = !item.favorito
         }
+        return item
       })
     }
   }

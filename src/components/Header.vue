@@ -1,28 +1,39 @@
-<template>
-    <header class="header">
-        <h1>FARMACIA Z</h1>
+<template>          
+    <header>
+        <router-link to="/">
+           FARMACIA Z
+        </router-link>
     </header>
+          
 </template>
 
-<script></script>
+<script>
+
+import {RouterLink} from "vue-router"
+
+export default{
+    components: { 
+        RouterLink
+    }
+ }
+
+</script>
 
 <style scoped>
-.header {
-    width: 1600vw;
-    height: 80px;
-    flex-shrink: 0;
-    background-color: #E2E2E2;
+header{ 
+    display: 100%;
+    height: 75px;
+    background-color: rgb(141, 137, 137);
+    
 }
 
-h1{
-color: #0c0c0c;
-font-family: Montserrat;
-font-size: 15px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-text-transform: uppercase;
-padding: 30px 50px ;
+a{ 
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    
 }
+
 
 </style>
