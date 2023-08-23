@@ -1,16 +1,15 @@
 <template>
     
-        <v-card elevation="5">
+        <v-card elevation="5" class="mx-3">
             <template v-slot:title>
                 <div class="d-flex justify-end">
                     <v-btn variant="text" :icon="favorito ? 'mdi-heart' : 'mdi-heart-outline'" color="teal-lighten-1" @click="$emit('favoritar', id)"></v-btn>
-                </div>
-                
+                </div>                
             </template>
         
         <v-card-text class="d-flex flex-column">
         <img :width="120" src="https://s3.ppllstatics.com/elcorreo/www/multimedia/2023/03/20/medicamentos-faltan-farmacias-k7LE-U190957054944cXD-1200x840@El%20Correo.jpeg" alt="imagen do medicamento">
-        <span> <b>Nome:</b> {{nome}} </span>
+        <p> <span class="font-weight-bold">Nome:</span> {{nome}} </p>
         <p> <span class="font-weight-bold">Laboratorio:</span> {{laboratorio}} </p>
         <p> <span  class="font-weight-bold">Preco: </span> {{preco}} </p>
         </v-card-text>

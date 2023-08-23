@@ -18,21 +18,14 @@
 
 <script>
 import CardMedicamento from "../components/CardMedicamento/index.vue"
+import axios from "axios" 
 export default {
     components: {
         CardMedicamento
     },
     data() {
         return {
-            listaMedicamentos: [
-                {
-                    id: 1,
-                    nome: "Paracetamol",
-                    laboratorio: "Clamed",
-                    preco: 20,
-                    favorito: false
-                }
-            ]
+            listaMedicamentos: []
         }
     },
 
@@ -48,6 +41,12 @@ export default {
                 return item
             })
         }
+    },
+    mounted() {
+        axios.get(" http://localhost:50001/medicamentos")
+        .then(res => this.listaMedicamentos = res.data)
+        .catch(erro => console.log(erro))
+        
     }
 }
 </script>
