@@ -1,10 +1,11 @@
 <template>
-    
+        
         <v-card elevation="5" class="mx-3">
             <template v-slot:title>
-                <div class="d-flex justify-end">
+                
+                    <div class="d-flex justify-end">
                     <v-btn variant="text" :icon="favorito ? 'mdi-heart' : 'mdi-heart-outline'" color="teal-lighten-1" @click="$emit('favoritar', id)"></v-btn>
-                </div>                
+                    </div>                                             
             </template>
         
         <v-card-text class="d-flex flex-column">
@@ -13,8 +14,9 @@
         <p> <span class="font-weight-bold">Laboratorio:</span> {{laboratorio}} </p>
         <p> <span  class="font-weight-bold">Preco: </span> {{preco}} </p>
         </v-card-text>
-        </v-card>                
-   
+        </v-card>  
+        
+    
 </template>
 
 <script>
@@ -25,13 +27,5 @@ export default {
 
 
 <style scoped>
-
-.card {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 4 -2em);
-    margin: 1em;
-    background-color: #c4c4c4;
-}
 
 </style>

@@ -10,8 +10,11 @@
         v-for="medicamento in listaMedicamentos" 
         :key="medicamento.id"
             @favoritar="FavoritarMedicamento" 
-            :nome="medicamento.nome" :laboratorio="medicamento.laboratorio"
-            :preco="medicamento.preco" :id="medicamento.id" />
+            :nome="medicamento.nome" 
+            :laboratorio="medicamento.laboratorio"
+            :preco="medicamento.preco" 
+            :id="medicamento.id"
+            :favorito="medicamento.favorito" />
 
     </div>
 </template>
@@ -31,15 +34,21 @@ export default {
 
     methods: {
 
-        FavoritarMedicamento(id) {
+        async FavoritarMedicamento(id) {
 
-            this.listaMedicamentos = this.listaMedicamentos.map(item => {
+            let medicamento= this.listaMedicamentos.filter(item => item.id === id)
 
-                if (item.id === id) {
-                    item.favorito = !item.favorito
+            if(!!medicamento[0]){ 
+                try {
+                    medicamento[0].favorito = !medicamento[0].favorito
+
+                    await axios.put("http://localhost:50001/medicamentos/$(id)", medicamento[0])
+                    
+                } catch (error) {
+                    console.log(erro)
+                    
                 }
-                return item
-            })
+            }
         }
     },
     mounted() {
