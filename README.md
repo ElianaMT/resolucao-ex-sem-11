@@ -1,29 +1,113 @@
-# resolucao-ex-sem-09
+# Projeto Vitrine de Medicamentos 
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+<p align="center">
+  <img src="../resolucao-ex-sem-11/src/assets/logo.jpg" alt="Logo">
+</p>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Uma página de vitrine de medicamentos onde teremos um formulário para cadastrar um novo medicamento e uma pagina Home que mostra a lista de todos os medicamentos que foram cadastrados.
 
-## Customize configuration
+## Índice
+- [Funcionalidades do Projeto](#funcionalidades)
+- [Layout](#layout)
+- [Demostratração](#demostracao)
+- [Como rodar este projeto?](#rodar)
+- [Technologias Utilizadas](#technologias)
+- [Autora](#autora)
+- [Proximos passos](#passos)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+<a name="funcionalidades"></a>
+## Funcionalidades do Projeto
 
-```sh
-npm install
+- [x] Home
+- [x] Cadastro novo medicamento
+
+<a name="layout"></a>
+## Layout
+
+### Home
+
+<p align="center">
+  <img src="../resolucao-ex-sem-11/src/assets/home.png" alt="Login">
+</p>
+
+### Cadastro novo medicamento
+
+<p align="center">
+  <img src="../resolucao-ex-sem-11/src/assets/cadastro.png" alt="Login">
+</p>
+
+
+### Cores
+
+<p align="center">
+
+  | Elemento  | Cores |
+| ------------- |:-------------:|
+| Toolbar      | success    |
+| Buttons   | success    |
+
+</p>
+
+
+<a name="demostracao"></a>
+## Demostratração
+
+[Assista ao vídeo](https://youtu.be/ufBJTcmtrPU)
+
+<a name="rodar"></a>
+## Como rodar este projeto?
+### APP
+```bash
+# Clone este repositório
+$ https://github.com/ElianaMT/resolucao-ex-sem-11.git
+
+# Accese a pasta do projeto no seu terminal 
+$ cd resolucao-ex-sem-11
+
+# Instale as dependencias
+$ npm install
+
+# Execute a aplicação
+$ npm run dev
+
+# A aplicação será iniciada na porta 5173, acesse pelo navegador:
+http://localhost:5173/
+```
+### API
+```bash
+# Clone este repositório
+$ git clone https://github.com/DEVinZucchetti/base_api-medicamentos-semana-11
+
+# Instale as dependencias
+$ npm install
+
+# Execute a aplicação
+$ npm run server
+
+# A aplicação será iniciada na porta 3000, acesse pelo navegador:
+http://localhost:50001
 ```
 
-### Compile and Hot-Reload for Development
+<a name="technologias"></a>
+## Technologias Utilizadas
 
-```sh
-npm run dev
-```
+1. HTML
+2. CSS
+3. [Vue.js](https://br.vuejs.org) 
+4. [Vuetify](https://vuetifyjs.com/en/) 
+5. JavaScript
 
-### Compile and Minify for Production
+<a name="autora"></a>
+## Autora
 
-```sh
-npm run build
-```
+<img alt="imagen da desemvolvedora" width="200" src="../resolucao-ex-sem-11/src/assets/Eliana.jpg">
+
+[Linkedin](https://www.linkedin.com/in/eliana-morillo-t-48888569/)
+
+<a name="passos"></a>
+## Proximos passos
+- [ ] Fazer as paginas responsivas
+- [ ] Mostrar elementos favoritados en outra tela
+- [ ] Implemetar um carrinho de compras
