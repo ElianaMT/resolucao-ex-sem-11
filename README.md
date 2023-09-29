@@ -29,13 +29,13 @@ Uma página de vitrine de medicamentos onde teremos um formulário para cadastra
 ### Home
 
 <p align="center">
-  <img src="../resolucao-ex-sem-11/src/assets/home.png" alt="Login">
+  <img src="../resolucao-ex-sem-11/src/assets/home.png" alt="Home">
 </p>
 
 ### Cadastro novo medicamento
 
 <p align="center">
-  <img src="../resolucao-ex-sem-11/src/assets/cadastro.png" alt="Login">
+  <img src="../resolucao-ex-sem-11/src/assets/cadastro.png" alt="cadastro novo medicamento">
 </p>
 
 
