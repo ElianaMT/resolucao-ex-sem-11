@@ -1,8 +1,9 @@
 <template>
     <header>
         <router-link to="/">
-            FARMACIA Z
-        </router-link>
+            <img src="../assets/logo.jpg" width="90" alt="logo" >         
+       
+        </router-link>   
 
     </header>
 </template>
@@ -22,16 +23,10 @@ export default {
 <style scoped>
 header {
     display: 100%;
-    height: 75px;
-    background-color: rgb(141, 137, 137);
+    height: 90px;
+    background-color: #5cb85c;
 
 }
 
-a {
-    text-decoration: none;
-    font-size: 2em;
-    color: black;
-    font-weight: bold;
 
-}
 </style>
