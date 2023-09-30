@@ -54,7 +54,7 @@ Uma página de vitrine de medicamentos onde teremos um formulário para cadastra
 <a name="demostracao"></a>
 ## Demostratração
 
-[Assista ao vídeo](https://youtu.be/ufBJTcmtrPU)
+[Assista ao vídeo](https://youtu.be/Li_2RIVFDis)
 
 <a name="rodar"></a>
 ## Como rodar este projeto?
@@ -86,11 +86,12 @@ $ npm install
 # Execute a aplicação
 $ npm run server
 
-# A aplicação será iniciada na porta 3000, acesse pelo navegador:
+# A aplicação será iniciada na porta 50001, acesse pelo navegador:
 http://localhost:50001
 ```
 
 <a name="technologias"></a>
+
 ## Technologias Utilizadas
 
 1. HTML
